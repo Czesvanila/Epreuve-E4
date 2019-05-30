@@ -23,6 +23,8 @@ if (isset($PARRAY["action"]))
                 getClientId($PARRAY["id"]);
         }else if($act=="getDepartement"){
                 getDepartement();
+		}else if($act=="getProduit"){
+                getProduit();
         }else if($act=="getClientsNom"){
                 getClientsNom($PARRAY["nom"]);
         }else if ($act=="getCommandesParClient"){

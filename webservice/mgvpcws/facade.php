@@ -30,6 +30,13 @@ function getDepartement(){
     echo json_encode($tabDepartements);
 }
 
+// Retourne la liste de tous les produits
+function getProduit(){
+    $manager = new produitManager(database::getDB());
+    $tabProduits = $manager->getList();
+    echo json_encode($tabProduits);
+}
+
 // Retourne la liste de tous les clients par numéro de département
 function getClientParDepartement($numDepart){
     $manager = new clientManager(database::getDB());

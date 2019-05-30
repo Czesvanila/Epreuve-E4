@@ -19,12 +19,12 @@ class typeProd implements JsonSerializable {
      *
      */    
     public function __construct($num,$lib){
-      
+        //on met pas l'id dans le constructeur
         $this->num = $num;
         $this->lib = $lib;
     }    
 
-
+    // Mutateurs chargés de modifier les attributs
     public function setNum($num){$this->num = $num;}    
     public function setLib($lib){$this->lib = $lib;}
     
